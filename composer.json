@@ -1,0 +1,31 @@
+{
+    "name": "pearl/csv-json-converter",
+    "description": "Convert CSV to JSON and JSON to CSV file format using PHP",
+    "type": "library",
+    "keywords": ["json", "csv", "json to csv", "csv to json", "php", "data converter"],
+    "authors": [
+        {
+            "name": "pearlkrishn",
+            "email": "pearlkrishn@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~5.0|~6.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pearl\\CsvJsonConverter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "Pearl\\CsvJsonConverter\\Tests\\": "tests" }
+    },
+    "scripts" : {
+        "test" : "vendor/bin/phpunit tests/  --stderr"
+    },
+    "minimum-stability": "dev"
+}
